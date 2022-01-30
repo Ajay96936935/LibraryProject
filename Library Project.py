@@ -28,9 +28,9 @@ class library:
 
 if __name__ == '__main__':
 
-    harry = library(['Python','Rich Dad and Poor Dad','Harry Potter','C++ Basic'], "Code with Harry")
+    ajay = library(['Python','Rich Dad and Poor Dad','Harry Potter','C++ Basic'], "Ajay Library")
     while(True):
-        print(f"Welcome to the {harry.name} library.Enter to your choice to continue")
+        print(f"Welcome to the {ajay.name} library.Enter to your choice to continue")
 
         print("1. Display Books")
         print("2. Lend a book")
@@ -39,21 +39,21 @@ if __name__ == '__main__':
         user_choice = int(input())
 
         if user_choice==1:
-            harry.displayBooks()
+            ajay.displayBooks()
 
 
         elif user_choice ==2:
             book = input("Enter the name you want to lend:")
             user = input("Enter your name")
-            harry.lendBooks(user,book)
+            ajay.lendBooks(user,book)
 
         elif user_choice==3:
             book = input("Enter the name of book you want to add")
-            harry.addBooks(book)
+            ajay.addBooks(book)
 
         elif user_choice==4:
             book = input("Enter the name of book you want to return")
-            harry.returnBook(book)
+            ajay.returnBook(book)
         else:
             print("Not valid option")
 
